@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dishname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_toLeftOf="@+id/dishimage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"/>
+    <TextView
+        android:id="@+id/dishdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dishname"
+        android:layout_marginStart="15dp"
+        android:layout_toLeftOf="@+id/dishimage"
+        android:layout_alignParentLeft="true"
+        android:text="Ingredients and description"/>
+    <TextView
+        android:id="@+id/dishprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$30.00"
+        android:layout_below="@+id/dishdesc"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"/>
+    <ImageView
+        android:id="@+id/dishimage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitCenter"
+        android:background="#D3D3D3"/>
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="ADD"
+        android:background="@drawable/addbtnbg"
+        android:textColor="#FFFF"
+        android:layout_below="@+id/dishprice"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        />
+    <Button
+        android:id="@+id/custombtn"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="CUSTOMISE"
+        android:background="@drawable/custombtnbg"
+        android:textColor="#000"
+        android:layout_below="@+id/dishprice"
+        android:layout_toRightOf="@+id/addbtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/custombtn"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>
